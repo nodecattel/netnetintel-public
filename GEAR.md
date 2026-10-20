@@ -1,6 +1,6 @@
 # TurfWar Gear · loot, enhancement and critical hits
 
-Private main revision: `80f9e832dc0250fd9f59293a606a1c647f44937d` · committed 2026-10-20T12:36:04+07:00.
+Private main revision: `e68c59e6897ebc3d1fdb30df2ab390b083bdc596` · committed 2026-10-20T13:37:05+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
@@ -139,4 +139,17 @@ The public discovery catalog lives at `/turfwar-gear/collection-manifest.json`. 
 ## Presentation
 
 Back Alleys, Velvet Strip and Quiet Harbor use matching breakable containers, collectibles, summary art and opening videos. Reviewed Artifact chests use a separate opening. The enhancement forge composites the actual held source artwork and the verified minted Enhanced item; it cannot pick a different outcome or submit another transaction on replay. Rejected wallet requests never start a success reveal.
+
+
+## New collection: account-bound shop boxes and Artifact balance v4
+
+Street costs 3 keys: Common 65%, Uncommon 25%, Rare 10%. Elite costs 5 keys: Uncommon 50%, Rare 30%, Epic 15%, Legendary 5%. Apex costs 15 keys: Rare 50%, Epic 30%, Legendary 17%, Mythic 3%. Enhanced chances are independently 10% / 25% / 50%; other outcomes are Base. No purchased box can mint official NET Gear or Artifact.
+
+Purchase burns keys once and records an account-bound chest. The chest has no NFT transfer method. Opening later commits with Provable, waits for the wallet transaction, reveals the same commitment and mints a tradable NFT. A failed or interrupted screen must recover that original purchase/opening; it must not charge or roll again. Opening costs no additional keys; both transactions use network gas. Paid boxes are separate from the five-per-day earned boss limit. Artifact remains a reviewed weekly Ranked top-three prize.
+
+Key spending does not create a second revenue split: sales revenue was allocated when the keys were bought. The new collection declares a 5% resale royalty to the game treasury through ERC-2981. Marketplaces decide whether they enforce it; direct NFT transfers do not charge an automatic royalty. Only actually received royalties count as treasury income. Earlier NFTs are unchanged.
+
+New collection snapshots explicitly use balanceVersion 4. Base, NET and Enhanced keep the existing v3 design profiles. Artifact has stronger slot profiles: its primary bonus reaches +100% of original HP, speed, damage or pickup at Mythic, or +20 armor points for Off-hand. Common–Mythic Artifact factors are 85 / 88 / 91 / 94 / 97 / 100% of that design's profile. Secondary effects vary by design. Seven-slot totals still cap at +100% per percentage stat, +20 armor points and 20% total crit chance. There is no level scaling, XP, score or reward multiplier.
+
+Sovereign Mythic Artifact artwork marks the new top set. Earlier NFTs retain original artwork, balances and ownership checks; pending V2 reveals keep their original contract and proof.
 
