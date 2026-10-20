@@ -1,6 +1,6 @@
 # TurfWar Gear · loot, enhancement and critical hits
 
-Private main revision: `e68c59e6897ebc3d1fdb30df2ab390b083bdc596` · committed 2026-10-20T13:37:05+07:00.
+Private main revision: `8726c559afd3655c073f2b84192b8bb5d25051cf` · committed 2026-10-20T13:58:54+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
@@ -143,7 +143,7 @@ Back Alleys, Velvet Strip and Quiet Harbor use matching breakable containers, co
 
 ## New collection: account-bound shop boxes and Artifact balance v4
 
-Street costs 3 keys: Common 65%, Uncommon 25%, Rare 10%. Elite costs 5 keys: Uncommon 50%, Rare 30%, Epic 15%, Legendary 5%. Apex costs 15 keys: Rare 50%, Epic 30%, Legendary 17%, Mythic 3%. Enhanced chances are independently 10% / 25% / 50%; other outcomes are Base. No purchased box can mint official NET Gear or Artifact.
+Street costs 3 keys: Common 65%, Uncommon 25%, Rare 10%. Elite costs 5 keys: Uncommon 50%, Rare 30%, Epic 15%, Legendary 5%. Apex costs 10 keys: Rare 50%, Epic 30%, Legendary 17%, Mythic 3%. Enhanced chances are independently 10% / 25% / 50%; other outcomes are Base. No purchased box can mint official NET Gear or Artifact.
 
 Purchase burns keys once and records an account-bound chest. The chest has no NFT transfer method. Opening later commits with Provable, waits for the wallet transaction, reveals the same commitment and mints a tradable NFT. A failed or interrupted screen must recover that original purchase/opening; it must not charge or roll again. Opening costs no additional keys; both transactions use network gas. Paid boxes are separate from the five-per-day earned boss limit. Artifact remains a reviewed weekly Ranked top-three prize.
 
