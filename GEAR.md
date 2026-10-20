@@ -1,6 +1,6 @@
 # TurfWar Gear · loot, enhancement and critical hits
 
-Private main revision: `22801d4eadd8ab159a300afd109cf69743f44dae` · committed 2026-10-20T11:31:10+07:00.
+Private main revision: `80f9e832dc0250fd9f59293a606a1c647f44937d` · committed 2026-10-20T12:36:04+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
@@ -102,3 +102,41 @@ This proves the committed roll. Qualification and cross-chain NET ownership stil
 rely on the disclosed server attester; this is not a fully trustless bridge.
 
 Inspect the current collection and governance through [the public contract directory](contracts/TESTNET.md). Mainnet is not activated.
+
+# Testnet gear gameplay balance 3
+
+The owner approved stronger starting bonuses immediately on testnet. Only new authoritative run snapshots tagged `balanceVersion: 3` receive this tuning. Existing native v1 items retain their original item rules; Founder Signet retains Magnet I (+30% pickup). Existing recorded runs and their archived verifier engines are preserved. Summon still receives no gear bonuses.
+
+## Collection and mint rules
+
+All 12 designs can roll independently at Common, Uncommon, Rare, Epic, Legendary and Mythic. Base, Enhanced and Artifact each have 72 combinations (216 total). Official NET Gear remains an ownership entitlement derived from the actual mainnet collection, not a game drop or invented rarity. District bosses retain their 8/12/18% chest odds, five-per-day account/wallet quota and 90% Base / 10% Enhanced opening split. Artifact remains reviewed weekly Ranked top-three loot.
+
+Existing deployed `GearCollectionV2` already supports these design/rarity combinations. Its mint-time `startingBonus`, `criticalBonus` and metadata `effects` are immutable v2 reference values. The new testnet game tuning is separate and explicitly labelled in the Workshop and public collection manifest; this update does not claim those Solidity methods changed. No collection migration, mint-price change or mainnet deployment occurs.
+
+## Starting gains
+
+Each design has a different profile. Multiply each profile’s maximum by the class/rarity factor: Base 25–40%, NET 45–60%, Enhanced 65–80%, Artifact 85–100%, linearly over six rarities. Stronger classes therefore stay ahead for the same design. Armor and crit are percentage points; other gains are percentages of original starting stats.
+
+| Design | Maximum profile at Artifact Mythic |
+|---|---|
+| Transit Pass | +90% pickup, +12% speed, +4 points crit |
+| Nightshift Flask | +35% health, +12 points armor |
+| Runner Boots | +75% speed, +20% health |
+| Neural Headset | +25% health, +20% damage, +6 points crit |
+| Streetguard Jacket | +75% health, +10 points armor |
+| Arc-Rail Blade | +100% damage, +12 points crit |
+| Signal Collar | +45% health, +25% speed, +4 points crit |
+| Scout Visor | +20% health, +35% pickup, +10 points crit |
+| Encrypted Terminal | +20 points armor, +25% damage, +4 points crit |
+| Authority Core | +100% pickup, +20% damage, +8 points crit |
+| Escape Pack | +45% health, +20% speed, +25% pickup |
+| Medtech Pulse Tool | +85% damage, +35% health, +8 points armor |
+
+Full seven-slot loadouts cap each HP/speed/damage/pickup gain at +100%, armor at +20 points, and total crit chance at 20%. Normal crit remains 1.5×. Bonuses are fixed starting additions, not multiplicative level-up scaling, XP, score or reward multipliers.
+
+The public discovery catalog lives at `/turfwar-gear/collection-manifest.json`. Discovery never implies ownership. Loadout ownership is checked before every run, so transferred items lose eligibility before the next run.
+
+## Presentation
+
+Back Alleys, Velvet Strip and Quiet Harbor use matching breakable containers, collectibles, summary art and opening videos. Reviewed Artifact chests use a separate opening. The enhancement forge composites the actual held source artwork and the verified minted Enhanced item; it cannot pick a different outcome or submit another transaction on replay. Rejected wallet requests never start a success reveal.
+
