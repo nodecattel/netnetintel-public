@@ -1,6 +1,6 @@
 # Testnet game, clones and integrations
 
-Private main revision: `274114ecc1d634c24edd7b551bd4b30f9b95cd2f` · committed 2026-10-20T10:34:41+07:00.
+Private main revision: `018b2153a753ce5b1387e8651bb1b5bb2ac9cd81` · committed 2026-10-20T11:28:19+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
@@ -29,7 +29,7 @@ Chain ID: 46630. Clones and stand-ins are test assets; their presence does not i
 | USDG Supporter Reward Escrow | Supporter pilots | Separately reserved player top-ups | [0x22db9a28809007Cfd4D9E9c107DBCa2bD028451F](https://explorer.testnet.chain.robinhood.com/address/0x22db9a28809007Cfd4D9E9c107DBCa2bD028451F) |
 | wsNET Supporter Vault | Supporter pilots | ERC-4626 shares and bounded top-up exposure | [0x6340D1D4Dc3Ab722809dAe41363c47B711F29C7b](https://explorer.testnet.chain.robinhood.com/address/0x6340D1D4Dc3Ab722809dAe41363c47B711F29C7b) |
 | wsNET Supporter Reward Escrow | Supporter pilots | Separately reserved player top-ups | [0x36f06d21df5313665202B8b908a00dF241ffb22c](https://explorer.testnet.chain.robinhood.com/address/0x36f06d21df5313665202B8b908a00dF241ffb22c) |
-| TurfWar Gear | Game infrastructure | Game gear NFTs and ownership provenance | [0xa2f7843667a7448db4cd3eec22e664b74b5233c9](https://explorer.testnet.chain.robinhood.com/address/0xa2f7843667a7448db4cd3eec22e664b74b5233c9) |
+| TurfWar Gear | Game infrastructure | Provable earned chests, tradable gear and atomic enhancement | [0x7f41e61eea856f987a253336f87cc4e513623152](https://explorer.testnet.chain.robinhood.com/address/0x7f41e61eea856f987a253336f87cc4e513623152) |
 | USDG | Testnet stand-ins | TestUSDG stand-in with permissionless drip(); not real USDG | [0xD8601E6476c5B42128D7CF64dAc4C1d58eF47A82](https://explorer.testnet.chain.robinhood.com/address/0xD8601E6476c5B42128D7CF64dAc4C1d58eF47A82) |
 | NET | NetNet testnet clones | Reserve-token bytecode clone; test assets only | [0x6f7ADC41e49c77617563528D59eC7D78b030D7aC](https://explorer.testnet.chain.robinhood.com/address/0x6f7ADC41e49c77617563528D59eC7D78b030D7aC) |
 | sNET | NetNet testnet clones | Rebasing staked-NET bytecode clone | [0xab6add8E7d9CE585572777cEbcb5e1e32906Ce5d](https://explorer.testnet.chain.robinhood.com/address/0xab6add8E7d9CE585572777cEbcb5e1e32906Ce5d) |
