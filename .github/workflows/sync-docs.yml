@@ -1,0 +1,72 @@
+name: Sync public documentation
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/sync-docs.yml]
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: public-docs
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out public documentation
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          path: public-docs
+      - name: Read private main with a repository-scoped read-only key
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          repository: nodecattel/netnetintel
+          ref: main
+          path: private-source
+          ssh-key: ${{ secrets.DOCS_SOURCE_SSH_KEY }}
+          persist-credentials: false
+          sparse-checkout: |
+            tools/public-docs
+            src/lib/turfWarTransparency.mjs
+            src/lib/turfWarTransparencyContracts.json
+          sparse-checkout-cone-mode: false
+      - name: Generate and validate Markdown only
+        shell: bash
+        run: |
+          node private-source/tools/public-docs/build.mjs --out "$RUNNER_TEMP/docs-export"
+          python3 - <<'PY'
+          from pathlib import Path
+          import os
+          export = Path(os.environ['RUNNER_TEMP']) / 'docs-export'
+          allowed = {'README.md','ECONOMY.md','CALCULATIONS.md','SUMMON.md','REWARDS.md','SUPPORTERS.md','BUYBACK.md','ARCHITECTURE.md','SYNC.md','contracts/README.md','contracts/TESTNET.md','contracts/MAINNET.md'}
+          files = {p.relative_to(export).as_posix() for p in export.rglob('*') if p.is_file()}
+          assert files == allowed, 'Unexpected export contents'
+          assert not any(p.is_symlink() for p in export.rglob('*')), 'Symlink rejected'
+          PY
+      - name: Update public Markdown without publishing the private checkout
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import os, shutil
+          public = Path('public-docs')
+          export = Path(os.environ['RUNNER_TEMP']) / 'docs-export'
+          for p in public.rglob('*.md'):
+              if '.git' not in p.parts:
+                  p.unlink()
+          for p in export.rglob('*.md'):
+              dest = public / p.relative_to(export)
+              dest.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copyfile(p, dest)
+          PY
+          cd public-docs
+          git config user.name 'netnetintel-docs[bot]'
+          git config user.email 'netnetintel-docs@users.noreply.github.com'
+          git add -- '*.md'
+          if ! git diff --cached --quiet; then
+            git commit -m 'Sync reviewed public guides from private main'
+            git push origin HEAD:main
+          fi
