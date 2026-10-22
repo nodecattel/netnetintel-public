@@ -1,6 +1,6 @@
 # Testnet game, clones and integrations
 
-Private main revision: `8726c559afd3655c073f2b84192b8bb5d25051cf` · committed 2026-10-20T13:58:54+07:00.
+Private main revision: `5e787ea8e66c7c184b79dc1bb731ac8cd57edca5` · committed 2026-10-22T10:48:59+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
@@ -29,7 +29,7 @@ Chain ID: 46630. Clones and stand-ins are test assets; their presence does not i
 | USDG Supporter Reward Escrow | Supporter pilots | Separately reserved player top-ups | [0x22db9a28809007Cfd4D9E9c107DBCa2bD028451F](https://explorer.testnet.chain.robinhood.com/address/0x22db9a28809007Cfd4D9E9c107DBCa2bD028451F) |
 | wsNET Supporter Vault | Supporter pilots | ERC-4626 shares and bounded top-up exposure | [0x6340D1D4Dc3Ab722809dAe41363c47B711F29C7b](https://explorer.testnet.chain.robinhood.com/address/0x6340D1D4Dc3Ab722809dAe41363c47B711F29C7b) |
 | wsNET Supporter Reward Escrow | Supporter pilots | Separately reserved player top-ups | [0x36f06d21df5313665202B8b908a00dF241ffb22c](https://explorer.testnet.chain.robinhood.com/address/0x36f06d21df5313665202B8b908a00dF241ffb22c) |
-| TurfWar Gear | Game infrastructure | Account-bound earned/shop chests, Provable gear reveals, atomic enhancement and 5% treasury royalties | [0x8c39471f769af14c48e3918b2fbf7b9dd22ee1e6](https://explorer.testnet.chain.robinhood.com/address/0x8c39471f769af14c48e3918b2fbf7b9dd22ee1e6) |
+| TurfWar Gear | Game infrastructure | Account-bound earned/shop chests, Provable gear reveals, atomic enhancement and 5% treasury royalties | [0x6d2beBcD6Dfd88393F51E8d413F406a08D4567F8](https://explorer.testnet.chain.robinhood.com/address/0x6d2beBcD6Dfd88393F51E8d413F406a08D4567F8) |
 | TurfWar Gear · earned chests | Game infrastructure | Current boss/weekly earned chests and retained V3 gear openings | [0xf404fc0d6771f54cdb3f4f18eb2b2aa645e1928b](https://explorer.testnet.chain.robinhood.com/address/0xf404fc0d6771f54cdb3f4f18eb2b2aa645e1928b) |
 | USDG | Testnet stand-ins | TestUSDG stand-in with permissionless drip(); not real USDG | [0xD8601E6476c5B42128D7CF64dAc4C1d58eF47A82](https://explorer.testnet.chain.robinhood.com/address/0xD8601E6476c5B42128D7CF64dAc4C1d58eF47A82) |
 | NET | NetNet testnet clones | Reserve-token bytecode clone; test assets only | [0x6f7ADC41e49c77617563528D59eC7D78b030D7aC](https://explorer.testnet.chain.robinhood.com/address/0x6f7ADC41e49c77617563528D59eC7D78b030D7aC) |
