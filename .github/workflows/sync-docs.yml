@@ -30,6 +30,8 @@ jobs:
           persist-credentials: false
           sparse-checkout: |
             tools/public-docs
+            docs/turfwar/gear/V2-LOOT-AND-COMBAT.md
+            docs/turfwar/GEAR-BALANCE3.md
             src/lib/turfWarTransparency.mjs
             src/lib/turfWarTransparencyContracts.json
           sparse-checkout-cone-mode: false
@@ -41,9 +43,9 @@ jobs:
           from pathlib import Path
           import os
           export = Path(os.environ['RUNNER_TEMP']) / 'docs-export'
-          allowed = {'README.md','ECONOMY.md','CALCULATIONS.md','SUMMON.md','REWARDS.md','SUPPORTERS.md','BUYBACK.md','ARCHITECTURE.md','SYNC.md','contracts/README.md','contracts/TESTNET.md','contracts/MAINNET.md'}
+          allowed = {'README.md','ECONOMY.md','CALCULATIONS.md','SUMMON.md','REWARDS.md','GEAR.md','SUPPORTERS.md','BUYBACK.md','ARCHITECTURE.md','SYNC.md','contracts/README.md','contracts/TESTNET.md','contracts/MAINNET.md'}
           files = {p.relative_to(export).as_posix() for p in export.rglob('*') if p.is_file()}
-          assert files == allowed, 'Unexpected export contents'
+          assert files == allowed, f'Unexpected export contents: missing={sorted(allowed - files)}, extra={sorted(files - allowed)}'
           assert not any(p.is_symlink() for p in export.rglob('*')), 'Symlink rejected'
           PY
       - name: Update public Markdown without publishing the private checkout
