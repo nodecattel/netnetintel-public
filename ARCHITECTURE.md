@@ -1,6 +1,6 @@
 # Architecture, verification and controls
 
-Private main revision: `cb840f4a861d8817d548b4fd2211953446a928a2` · committed 2026-10-23T07:57:52+07:00.
+Private main revision: `6e7cea17577bdfcfb535410bdd732028488f486e` · committed 2026-10-23T09:15:36+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
