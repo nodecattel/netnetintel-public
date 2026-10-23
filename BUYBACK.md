@@ -1,6 +1,6 @@
 # Guarded buyback and the NET connection
 
-Private main revision: `3ac1c58fd0031891b2c551719332cde75ee29a52` · committed 2026-10-23T07:11:28+07:00.
+Private main revision: `cb840f4a861d8817d548b4fd2211953446a928a2` · committed 2026-10-23T07:57:52+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
