@@ -1,6 +1,6 @@
 # Official NetNet mainnet references
 
-Private main revision: `7a91dbe5ce0e7d5766afe4ac9991bd51061c8768` · committed 2026-10-27T11:26:25+07:00.
+Private main revision: `15483bb33489ab41c6ac887d44ed5ee8ae9aa41f` · committed 2026-10-27T11:52:35+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
