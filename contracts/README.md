@@ -1,6 +1,6 @@
 # Current contract directory
 
-Private main revision: `852493feb581a904f35713a4c6e88932be0e451d` · committed 2026-10-27T10:59:09+07:00.
+Private main revision: `685a25c3912de47c9e734ae343a600f027dcc381` · committed 2026-10-27T11:17:40+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
