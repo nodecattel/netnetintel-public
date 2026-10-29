@@ -1,6 +1,6 @@
 # Reward settlement, claims and ownership
 
-Private main revision: `f3d8c84866e840ebc61827bb020f1709856cdced` · committed 2026-10-28T09:21:39+07:00.
+Private main revision: `6a4b028f766445f055c5a0d217fa7fd2aa18f894` · committed 2026-10-29T15:11:40+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
