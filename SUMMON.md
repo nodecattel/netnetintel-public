@@ -1,6 +1,6 @@
 # Summon mechanics and proof boundaries
 
-Private main revision: `9426d68da3d06b85bc8b1cd3598ca140141e4664` · committed 2026-10-29T23:49:56+07:00.
+Private main revision: `160b8a1ef548882186e686d190777ce5a3ccbcda` · committed 2026-10-31T10:03:05+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
