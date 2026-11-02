@@ -1,6 +1,6 @@
 # Publication and synchronization
 
-Private main revision: `204d7f173d4beab5dc325e9e2ace5c040712df49` · committed 2026-11-02T09:58:15+07:00.
+Private main revision: `6f9ccea03990173c33261787e2df5d96d5c085c8` · committed 2026-11-02T12:07:10+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
