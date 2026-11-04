@@ -1,6 +1,6 @@
 # TurfWar Gear · loot, enhancement and critical hits
 
-Private main revision: `c9bfc5f5dba21a42079a84498c08fdd9cc44dd30` · committed 2026-11-04T07:31:01+07:00.
+Private main revision: `ccd308dd2d4069f1ca6c28e13d94a2ebb1308b77` · committed 2026-11-04T14:12:35+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
