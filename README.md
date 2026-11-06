@@ -1,6 +1,6 @@
 # NetNet Intel · Under the Hood
 
-Private main revision: `ccd308dd2d4069f1ca6c28e13d94a2ebb1308b77` · committed 2026-11-04T14:12:35+07:00.
+Private main revision: `8532349ed7c5856dee100b9aac729824105c6233` · committed 2026-11-06T07:00:19+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
