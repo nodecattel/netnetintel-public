@@ -1,6 +1,6 @@
 # Formulas and worked examples
 
-Private main revision: `5c616673fd68cb8afda81aaf2b13bfd8463cadcc` · committed 2026-11-08T23:20:15+07:00.
+Private main revision: `3a4db4cce580f62ec759bdcfe8f795ae8f159091` · committed 2026-11-08T23:33:02+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
