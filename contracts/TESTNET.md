@@ -1,6 +1,6 @@
 # Testnet game, clones and integrations
 
-Private main revision: `5ebc7879d03c46d6ff0da811e7694ff920fd421c` · committed 2026-11-08T22:45:24+07:00.
+Private main revision: `0420ffe7eb332af75531e93cd6e58cfca91905b2` · committed 2026-11-08T23:02:12+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
