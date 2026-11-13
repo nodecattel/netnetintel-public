@@ -1,6 +1,6 @@
 # Sales, allocation and sustainability
 
-Private main revision: `6b42e78b27580ba2714d656caf8c4019ce5ad556` · committed 2026-11-09T07:16:16+07:00.
+Private main revision: `4757e04f7440de252f8a5cdfd91d6761d5e3ffda` · committed 2026-11-13T07:32:14+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
