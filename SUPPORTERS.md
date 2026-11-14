@@ -1,6 +1,6 @@
 # Supporter economics and limits
 
-Private main revision: `04fc09b100cbd2cc2ac8b3a3c63f63f9b4e73be7` · committed 2026-11-14T17:00:59+07:00.
+Private main revision: `fd2d607dc76c8cabcd8eb3a51b2825d9ee4ba566` · committed 2026-11-14T17:32:05+07:00.
 
 Documentation only. No Solidity, application, backend or calculator source is published here. This is not an audit or a claim of explorer source verification. Live balances and current configuration: [Under the Hood](https://netnetintel.com/under-the-hood) and [Funded Pots](https://netnetintel.com/turfwar-funding).
 
